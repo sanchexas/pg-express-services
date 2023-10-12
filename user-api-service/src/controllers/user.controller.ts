@@ -3,7 +3,7 @@ import userService from "../services/user.service";
 import { UserDto } from "../_dtos/user.dtos";
 
 class UserController {
-    public create(req: Request<UserDto>, res: Response){
+    public create(req: Request<UserDto>, res: Response): void{
         userService.create(req.body).then((result)=>{
             result ? res.send(result) : res.sendStatus(200);
         });
@@ -14,8 +14,10 @@ class UserController {
     public getById(req: Request, res: Response){
 
     }
-    public getAll(req: Request, res: Response){
-        res.send('hello world!');
+    public getAll(req: Request, res: Response): void{
+        userService.getAll().then((result)=>{
+            result ? res.send(result) : res.sendStatus(200);
+        });
     }
 }
 

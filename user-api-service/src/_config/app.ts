@@ -15,7 +15,7 @@ export class App{
         this.routes();
     }
     settings(){
-        this.app.set('port', this.port || process.env.API_PORT || 1000);
+        this.app.set('port', this.port || process.env.API_PORT || 1001);
     }
     usages(){
         this.app.use(express.json());

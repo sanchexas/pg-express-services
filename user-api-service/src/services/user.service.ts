@@ -1,5 +1,5 @@
 import { dbConnection } from "../_config/db_config";
-import { UserDto } from "../_dtos/user.dtos";
+import { UserDto, UserEntityDto } from "../_dtos/user.dtos";
 
 class UserService{
     public async create(user: UserDto){
@@ -8,6 +8,7 @@ class UserService{
                 'INSERT INTO users (name, surname, city, age) VALUES ($1, $2, $3, $4)',
                 [user.name, user.surname, user.city, user.age],
             );
+            
         }catch(error){
             if(error instanceof Error){
                 return {
@@ -25,7 +26,18 @@ class UserService{
 
     }
     public async getAll(){
-
+        try {
+            const result = await dbConnection.query<UserEntityDto>('SELECT * FROM users');
+            return result.rows;
+        } catch (error) {
+            if (error instanceof Error) {
+                return {
+                    message: "Ошибка, не удалось получить пользователей.",
+                    reason: error.message
+                };
+            }
+            console.log(error);
+        }       
     }
 }
 
