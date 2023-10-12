@@ -1,10 +1,10 @@
-import { Client, ClientConfig } from "pg";
+import { Pool, PoolConfig } from "pg";
 import { config } from "dotenv";
 
 config();
 const DB_SERVER_PORT: string | undefined = process.env.DB_SERVER_PORT;
 const DEFAULT_DB_SERVER_PORT = 5432;
-const dbconfig: ClientConfig = {
+const dbconfig: PoolConfig = {
     host: process.env.DB_SERVER_HOST,
     port: !DB_SERVER_PORT ? DEFAULT_DB_SERVER_PORT : +DB_SERVER_PORT,
     database: process.env.DB_NAME,
@@ -12,4 +12,4 @@ const dbconfig: ClientConfig = {
     password: process.env.DB_PASSWORD,
 };
 
-export const dbConnection: Client = new Client(dbconfig);
+export const dbConnection: Pool = new Pool(dbconfig);

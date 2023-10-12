@@ -1,4 +1,4 @@
-import {App} from "./config/app";
+import {App} from "./_config/app";
 
 function main(){
     const app = new App(process.env.PORT);
