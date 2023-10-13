@@ -1,6 +1,6 @@
-- [Задание](#Задание)
-- [Реализация](#Реализация)
-- [Видео-демка](#Видео-демка)
+- #####[Задание](#Задание)
+- #####[Реализация](#Реализация)
+####[Видео-демка](#Видео-демка)
 
 ### Задание
 
@@ -18,4 +18,7 @@
 СУБД - postgresql.
 
 ### Реализация
+##### Структура проекта:
+![img](https://github.com/sanchexas/pg-express-services/blob/master/APIS_STRUCTURE.PNG)
+##### Диаграмма базы данных
 ![img](https://github.com/sanchexas/pg-express-services/blob/master/DB_DIAGRAM.PNG)
