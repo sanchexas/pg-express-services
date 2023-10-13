@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
 import { config } from 'dotenv';
 import userRouter from '../routes/user.routes';
 config();
@@ -22,7 +22,6 @@ export class App{
         this.app.use(bodyParser.urlencoded({extended: true}));
     }
     routes(){
-        // routes examples
         this.app.use('/users',userRouter);
     }
     listen(){

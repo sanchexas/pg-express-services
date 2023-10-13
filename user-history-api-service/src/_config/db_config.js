@@ -1,4 +1,4 @@
-import { Pool } from "pg";
+import pg from "pg";
 import { config } from "dotenv";
 
 config();
@@ -12,4 +12,4 @@ const dbconfig = {
     password: process.env.DB_PASSWORD,
 };
 
-export const dbConnection = new Pool(dbconfig);
+export const dbConnection = new pg.Pool(dbconfig);

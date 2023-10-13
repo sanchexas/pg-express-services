@@ -1,6 +1,4 @@
-export type HistoryLogsEntityDto = {
-    id_log: number
+export type HistoryLogDto = {
     user_id: number
-    activity_type_id: number
-    time_stamp: string | any
+    activity_type: 'update' | 'create'
 }
