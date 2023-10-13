@@ -17,6 +17,7 @@ class UhistoryService{
             };
         }
     }
+    // получение истории действий пользователя с разбивкой на страницы
     async getByUserIdAndPageNumber(id_user, page, limit){
         try{
             limit = !limit || limit <= 0 ? this.DEFAULT_SHOW_LIMIT : +limit;
