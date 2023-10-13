@@ -45,6 +45,7 @@
 - `cd..`
 - `cd user-history-api-service`
 - `npm i`
+
 3 Запустить postgres сервер и импортировать DUMP.sql, название БД - udb ;
 
 4 Отредактируйте значения переменных .env в двух api под ваши конфиги postgres-а ;
