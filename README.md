@@ -34,11 +34,11 @@
 ## Инструкция по запуску
 
 1 Клонировать проект
-`git clone https://github.com/sanchexas/pg-express-services.git`
+- `git clone https://github.com/sanchexas/pg-express-services.git`
 
 2 Открыть терминал в главной папке и прописать команды для установки npm пакетов:
-`cd user-api-service`
-`npm i`
-`cd..`
-`cd user-history-api-service`
-`npm i`
+- `cd user-api-service`
+- `npm i`
+- `cd..`
+- `cd user-history-api-service`
+- `npm i`
