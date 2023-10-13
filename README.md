@@ -1,5 +1,6 @@
 - [Задание](#Задание)
 - [Реализация](#Реализация)
+- [Видео-демка](#Видео-демка)
 
 ### Задание
 
@@ -17,4 +18,4 @@
 СУБД - postgresql.
 
 ### Реализация
-
+![img](https://github.com/sanchexas/pg-express-services/blob/master/DB_DIAGRAM.PNG)
