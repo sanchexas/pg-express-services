@@ -28,7 +28,7 @@
 - api сервис пользователей (TS)
 - api сервис истории действий пользователей (JS)
 - база данных PostgreSQL
-![img](https://github.com/sanchexas/pg-express-services/blob/master/APIS_STRUCTURE.PNG)
+![img](https://github.com/sanchexas/pg-express-services/blob/master/API_STRUCTURE.PNG)
 ### Диаграмма базы данных
 ![img](https://github.com/sanchexas/pg-express-services/blob/master/DB_DIAGRAM.PNG)
 
