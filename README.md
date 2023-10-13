@@ -18,8 +18,12 @@
 Один из сервисов должен быть на JS, для второго можно использовать TS.
 СУБД - postgresql.
 
-### Реализация
-#### Структура проекта:
+## Реализация
+.env файлы специально НЕ были помещены в .gitignore, так как проект является тестовым заданием от компании. В реальных проектах так делать не стоит.
+### Структура проекта:
+- api сервис пользователей (TS)
+- api сервис истории действий пользователей (JS)
+- база данных PostgreSQL
 ![img](https://github.com/sanchexas/pg-express-services/blob/master/APIS_STRUCTURE.PNG)
-#### Диаграмма базы данных
+### Диаграмма базы данных
 ![img](https://github.com/sanchexas/pg-express-services/blob/master/DB_DIAGRAM.PNG)
